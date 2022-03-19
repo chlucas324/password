@@ -8,23 +8,17 @@
 // Assignment code here
 var letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numeric = "10123456789";
-var special = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-
-
-function passwordFunction() {
-  let text;
-  let length = prompt("What is the password length?");
-  if (length >= "8" || length <= "128") {
-    text = "User does not want password";
-  } else {
-    text = "Passwords can be between 8 and 128 characters. Please try again."
-  }
-  document.getElementById("password").innerHTML = text;
-  }
-
+var special = "!#$%&'()*+,-./:;<=>?@[/]^_`{|}~";
+var length = prompt("How many characters would you like your password?");
+while(length < 8 || length > 128) length = prompt("Length must be between 8 and 128 characters. Try again.");
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+
+
+// function passwordFunction(){
+//   prompt ("These are your options.");
+// }
 
 // Write password to the #password input
 function writePassword() {
