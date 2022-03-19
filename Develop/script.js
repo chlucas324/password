@@ -7,13 +7,12 @@
 
 // Assignment code here
 var generateBtn = document.querySelector("#generate")
-var passwordText = document.querySelector("#password");
 generateBtn.addEventListener('click', writePassword);
 
 // Arrays
-var letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numeric = "10123456789";
-var special = "!#$%&'()*+,-./:;<=>?@[/]^_`{|}~";
+var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k","l", "m", "n", "o", "p", "q", "r", "s", "t", "u","v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var special = ["!","#", "$", "%", "&", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "/","]", "^", "`", "{", "|", "}", "~"];
 
 // confirm variables
 var passwordLength = "";
@@ -21,12 +20,7 @@ var confirmLetters;
 var confirmNumeric;
 var confirmSpecial;
 
-
-
 // Add event listener to generate button
-// 
-
-
 // prompt to confirm password length (# of characters)
 function generatePassword() {
 var passwordLength = prompt("How many characters would you like your password?");
@@ -43,6 +37,24 @@ while(!(confirmLetters || confirmNumeric || confirmSpecial)) {
 }
 }
 
+var chararacters = []
+  if (confirmSpecial) {
+    character = character.concat(special)
+  }
+
+  if (confirmNumeric) {
+    character = character.concat(numeric)
+  }
+
+  if (confirmLetters) {
+    character = character.concat(letters)
+  }
+
+console.log(character)
+// var randomPassword= "" 
+// for (var i = 0; i <passwordLength; i++) {
+//   randomPassword = 
+// }
 // Get references to the #generate element
 // 
 // function generatePassword(numeric)
@@ -66,6 +78,7 @@ while(!(confirmLetters || confirmNumeric || confirmSpecial)) {
 // function writePassword() {
 //   
 // var password = generatePassword();
+//var passwordText = document.querySelector("#password");
 //   passwordText.value = password;
 
 // }
