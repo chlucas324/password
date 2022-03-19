@@ -6,7 +6,7 @@
 // displayed as an alert or written on page- create alert
 
 // Assignment code here
-var letters = "abcdefghijklmnopqrstuvwxyz";
+var letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numeric = "10123456789";
 var special = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
@@ -36,4 +36,4 @@ function writePassword() {
 }
 
 // // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword);

@@ -26,6 +26,16 @@
         </div>
         <div class="card-footer">
           <button id="generate" class="btn" onclick="passwordFunction()">Generate Password</button>
+          <div id="options">
+            <label for="length">Length</label>
+            <input type="number" id="length" min="8" max="128" />
+            <label for="letters">Include Letters</label>
+            <input type="checkbox" id="letters" checked/>
+            <label for="special">Include Special Characters</label>
+            <input type="checkbox" id="special" checked/>
+            <label type="numeric">Include Numbers</label>
+            <input type="checkbox" id="numeric" checked/>
+          </div>
         </div>
       </div>
     </div>
