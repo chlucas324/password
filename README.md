@@ -8,3 +8,4 @@ This web application uses JavaScript to generate a new password.  The user is pr
 https://chlucas324.github.io/password/
 
 ## Screenshot of deployed website
+<img width="1440" alt="password screenshot" src="https://user-images.githubusercontent.com/91441453/159144425-e7b6715b-7a9e-4563-bc75-259b36caa936.png">
